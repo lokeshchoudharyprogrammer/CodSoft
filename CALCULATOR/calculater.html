@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculater.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="card">
+        <div
+          class="card-info"
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 23px;
+
+            padding-bottom: 39px;
+            padding-top: 28px;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              gap: 23px;
+              justify-content: center;
+              padding-bottom: 39px;
+              padding-top: 28px;
+              font-weight: 600;
+              font-size: 35px;
+            "
+          >
+            Simple Calculator
+          </div>
+          <div class="InputContainer">
+            <input
+              placeholder=""
+              id="display"
+              readonly
+              class="input display"
+              readonly
+              name="text"
+              type="text"
+            />
+          </div>
+          <div class="buttons">
+            <button class="button btn" data-message="AC" id="clear">AC</button>
+            <button class="button btn" data-message="%">%</button>
+            <button class="button btn" data-message="/">/</button>
+            <button class="button btn" data-message="7">7</button>
+            <button class="button btn" data-message="8">8</button>
+            <button class="button btn" data-message="9">9</button>
+            <button class="button btn" data-message="*">6</button>
+            <button class="button btn" data-message="4">5</button>
+            <button class="button btn" data-message="5">*</button>
+            <button class="button btn" data-message="6">3</button>
+            <button class="button btn" data-message="-">4</button>
+            <button class="button btn" data-message="1">-</button>
+            <button class="button btn" data-message="2">1</button>
+            <button class="button btn" data-message="3">2</button>
+            <button class="button btn" data-message="+">+</button>
+            <button class="button btn" data-message=".">.</button>
+            <button class="button btn" data-message="0">0</button>
+
+            <button class="button btn" data-message="equals">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./calculater.js"></script>
+  </body>
+</html>
